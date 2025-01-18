@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <title>MOVIE WEBSITE</title>
+</head>  
+<body>
+    <header>
+        <a href="#" class="logo">iMovies</a>
+        <ul class="nav">
+            <li>
+                <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#">Anak</a></li>
+            <li><a href="#"> Remaja</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">List Saya</a></li>
+        </ul> 
+        <div class="search">
+            <input type="text" placeholder="cari" />
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="content active">
+            <img 
+            src="./GAMBAR/the-little-mermaid-title.png" 
+            alt="" 
+            class="movie-title" 
+            />
+            <h4>
+                <span>2024</span><span><i>12+</i></span>
+                <span>2h 13min</span><span>Romance</span>
+            </h4>
+            <p>
+                Perusahaan ini sendiri adalah perusahaan yang sangat sukses. 
+                Yang mana, dalam menjalankan tugas tersebut, tidak ada seorang pun yang bersedia menerima kesusahan sang penemu. 
+                Saya memilih kesenangan dari sesuatu yang lain dalam melatih rasa sakit. 
+                Ini akan menjadi kebijaksanaan yang paling berharga.
+            </p>
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Tonton </a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> List Saya </a>
+            </div>
+            <div class="carousel-box">
+                <div class="carousel">
+                    <div class="carousel-item"
+                    onclick="changeBg('bg-little-mermaid.jpg', 'the-little-mermaid' );">
+                        <img src="./GAMBAR/the-little-mermaid.jpeg" alt=""/>
+                    </div>
+                    <div class="carousel-item"
+                    onclick="changeBg('bg-65.jpg', 'the-65-title' );">
+                        <img src="./GAMBAR/65.jpg" alt=""/>
+                    </div>
+                    <div class="carousel-item"
+                    onclick="changeBg('bg-the-covenant.jpeg', 'the-the-covenant' );">
+                        <img src="./GAMBAR/the-covenant.jpg" alt=""/>
+                    </div>
+                    <div class="carousel-item"
+                    onclick="changeBg('bg-the-black-demon.jpeg', 'the-the-black-demon' );">
+                        <img src="./GAMBAR/the-black-demon.jpg" alt=""/>
+                    </div>
+                    <div class="carousel-item"
+                    onclick="changeBg('bg-the-tank.jpeg', 'the-the-tank' );">
+                        <img src="./GAMBAR/the-tank.jpeg" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="play" onclick="toggleVideo();"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Tonton Trailer </a>
+            <ul class="sci">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>    
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+    </script>
+</body> 
+</html>
